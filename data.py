@@ -1,5 +1,6 @@
 import numpy as np
 from PIL import Image
+#from skimage import io
 import glob
 
 import torch
@@ -17,7 +18,7 @@ class strawberry(data.Dataset):
         
         image_path = self.image_list[index]
         im = Image.open(image_path)
-        im = np.asarray(im)
+        im = np.asarray(im)/255
         images = torch.FloatTensor(im)
 
         return images
