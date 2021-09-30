@@ -13,6 +13,7 @@ class strawberry(data.Dataset):
         
         self.image_list = glob.glob(folder_path+'*')
         self.data_len = len(self.image_list)
+        
 
     def __getitem__(self, index):
         
