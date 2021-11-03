@@ -19,7 +19,7 @@ class strawberry(data.Dataset):
         
         image_path = self.image_list[index]
         im = Image.open(image_path)
-        im = np.asarray(im)/255
+        im = np.transpose(np.asarray(im)/255, (2, 0, 1))
         images = torch.FloatTensor(im)
 
         return images

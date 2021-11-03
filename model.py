@@ -8,6 +8,32 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 from IPython.display import HTML
 
+image_size = 64
+
+# Number of channels in the training images. For color images this is 3
+nc = 3
+
+# Size of z latent vector (i.e. size of generator input)
+nz = 100
+
+# Size of feature maps in generator
+ngf = 64
+
+# Size of feature maps in discriminator
+ndf = 64
+
+# Number of training epochs
+num_epochs = 5
+
+# Learning rate for optimizers
+lr = 0.0002
+
+# Beta1 hyperparam for Adam optimizers
+beta1 = 0.5
+
+# Number of GPUs available. Use 0 for CPU mode.
+ngpu = 0
+
 # Model code from https://github.com/pytorch/tutorials/blob/master/beginner_source/dcgan_faces_tutorial.py
 class Generator(nn.Module):
     def __init__(self, ngpu):
