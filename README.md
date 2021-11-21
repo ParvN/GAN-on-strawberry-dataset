@@ -1,4 +1,4 @@
-Testing GAN on strawberry dataset
+Testing GAN on strawberry dataset (#unfinished)
 
 References:
 
