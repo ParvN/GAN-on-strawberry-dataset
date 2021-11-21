@@ -34,7 +34,8 @@ beta1 = 0.5
 # Number of GPUs available. Use 0 for CPU mode.
 ngpu = 0
 
-# Model code from https://github.com/pytorch/tutorials/blob/master/beginner_source/dcgan_faces_tutorial.py
+# Model code from a. https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html
+#b. https://github.com/pytorch/tutorials/blob/master/beginner_source/dcgan_faces_tutorial.py
 class Generator(nn.Module):
     def __init__(self, ngpu):
         super(Generator, self).__init__()
